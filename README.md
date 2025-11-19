@@ -5,7 +5,8 @@
         <stop offset="0%" stop-color="#1E90FF"/>
         <stop offset="100%" stop-color="#6A5ACD"/>
       </linearGradient>
-    <filter id="glow">
+      <!-- Glow animation -->
+      <filter id="glow">
         <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
         <feMerge>
           <feMergeNode in="coloredBlur"/>
@@ -13,9 +14,11 @@
         </feMerge>
       </filter>
     </defs>
+    <!-- Animated line background -->
     <rect width="100%" height="180" fill="url(#grad)">
       <animate attributeName="opacity" from="0.85" to="1" dur="3s" repeatCount="indefinite"/>
     </rect>
+    <!-- Data Science Icon (nodes + pulses) -->
     <g transform="translate(150, 90)">
       <circle cx="0" cy="0" r="8" fill="white" filter="url(#glow)">
         <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
@@ -29,15 +32,18 @@
       <circle cx="120" cy="0" r="8" fill="white" filter="url(#glow)">
         <animate attributeName="r" values="8;11;8" dur="2.6s" repeatCount="indefinite"/>
       </circle>
+      <!-- Connecting lines -->
       <line x1="0" y1="0" x2="60" y2="-35" stroke="white" stroke-width="2" opacity="0.8"/>
       <line x1="0" y1="0" x2="60" y2="35" stroke="white" stroke-width="2" opacity="0.8"/>
       <line x1="60" y1="-35" x2="120" y2="0" stroke="white" stroke-width="2" opacity="0.8"/>
       <line x1="60" y1="35" x2="120" y2="0" stroke="white" stroke-width="2" opacity="0.8"/>
     </g>
+    <!-- Text: Your Name -->
     <text x="450" y="100" text-anchor="middle" font-size="48" fill="white" font-weight="bold" filter="url(#glow)">
       Vagner Vargas
       <animate attributeName="letter-spacing" values="1;4;1" dur="3s" repeatCount="indefinite"/>
     </text>
+    <!-- Subtitle -->
     <text x="450" y="135" text-anchor="middle" font-size="22" fill="#F0F0FF">
       Ciência de Dados • Nutrição • Tecnologia
       <animate attributeName="opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
