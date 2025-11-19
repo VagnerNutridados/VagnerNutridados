@@ -1,7 +1,64 @@
-<!-- Top animation: waving capsule + typing SVG -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=#380000&height=140&section=header"/>
+<p align="center">
+  <svg width="100%" height="180" viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=#380000&size=35&center=true&vCenter=true&width=1000&lin es=Olá,+Meu+nome+é+Vagner+Vargas;Tenho+27+Anos;Brasileiro;Cientista+de+Dados;Seja+Bem+-+Vindo!+:%29)](htt ps://git.io/typing-svg)
+    <!-- Background gradient -->
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1E90FF"/>
+        <stop offset="100%" stop-color="#6A5ACD"/>
+      </linearGradient>
+
+      <!-- Glow animation -->
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+        <feMerge>
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+
+    <!-- Animated line background -->
+    <rect width="100%" height="180" fill="url(#grad)">
+      <animate attributeName="opacity" from="0.85" to="1" dur="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Data Science Icon (nodes + pulses) -->
+    <g transform="translate(150, 90)">
+      <circle cx="0" cy="0" r="8" fill="white" filter="url(#glow)">
+        <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="60" cy="-35" r="6" fill="#E0E0FF">
+        <animate attributeName="r" values="6;9;6" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="60" cy="35" r="6" fill="#E0E0FF">
+        <animate attributeName="r" values="6;9;6" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="120" cy="0" r="8" fill="white" filter="url(#glow)">
+        <animate attributeName="r" values="8;11;8" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Connecting lines -->
+      <line x1="0" y1="0" x2="60" y2="-35" stroke="white" stroke-width="2" opacity="0.8"/>
+      <line x1="0" y1="0" x2="60" y2="35" stroke="white" stroke-width="2" opacity="0.8"/>
+      <line x1="60" y1="-35" x2="120" y2="0" stroke="white" stroke-width="2" opacity="0.8"/>
+      <line x1="60" y1="35" x2="120" y2="0" stroke="white" stroke-width="2" opacity="0.8"/>
+    </g>
+
+    <!-- Text: Your Name -->
+    <text x="450" y="100" text-anchor="middle" font-size="48" fill="white" font-weight="bold" filter="url(#glow)">
+      Vagner Vargas
+      <animate attributeName="letter-spacing" values="1;4;1" dur="3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="450" y="135" text-anchor="middle" font-size="22" fill="#F0F0FF">
+      Ciência de Dados • Nutrição • Tecnologia
+      <animate attributeName="opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
+    </text>
+
+  </svg>
+</p>
 # 👋 Olá — eu sou Vagner Vargas
 
 ### 🎓 Sobre mim
