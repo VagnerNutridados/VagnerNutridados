@@ -1,8 +1,7 @@
 <!-- Top animation: waving capsule + typing SVG -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1E90FF&height=140&section=header"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=#380000&height=140&section=header"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=1E90FF&size=34&center=true&vCenter=true&width=1000&lines=OL%C3%81+eu+sou+Vagner+Vargas;27+anos;Estudante+de+Ci%C3%AAncias+de+Dados+e+Nutri%C3%A7%C3%A3o;Cientista+de+Dados+em+formac% C3%A3o;Seja+bem-vindo!)](https://git.io/typing-svg)
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=#380000&size=35&center=true&vCenter=true&width=1000&lin es=HELLO,+Meu+nome+é+Vagner+Vargas;Tenho+27+Anos;Brasileiro;Cientista+de+Dados;Seja+Bem+-+Vindo!+:%29)](htt ps://git.io/typing-svg)
 # 👋 Olá — eu sou Vagner Vargas
 
 ### 🎓 Sobre mim
